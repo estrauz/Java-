@@ -9,22 +9,28 @@ public class Homework6 {
         add(225);
         add(209);
 
+        // Выводим множество в консоль
+        
         System.out.println(Collections.keySet());
-
-        for(Integer value : Collections.keySet()){
-            System.out.println(value);
-
+        for(Integer keys : Collections.keySet()){
+            System.out.println(keys);
+        
         
         }
     }
-
+    // Создаем множество с ключем, но без значения
     private static HashMap<Integer, Object> Collections = new HashMap<>();
 
-    private static final Object element = new Object();
+    private static final Object value = new Object();
 
-    public static void add(Integer value){
-        Collections.put(value, element);
+    public static void add(Integer keys){
+        Collections.put(keys, value);
     }
+
+         
+
+      
+
     
         
 
