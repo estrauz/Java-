@@ -10,18 +10,24 @@ public class Homework6 {
         add(209);
 
         System.out.println(Collections.keySet());
+
+        for(Integer value : Collections.keySet()){
+            System.out.println(value);
+
+        
+        }
     }
 
     private static HashMap<Integer, Object> Collections = new HashMap<>();
 
     private static final Object element = new Object();
 
-    public static void add(Integer numbers){
-        Collections.put(numbers, element);
+    public static void add(Integer value){
+        Collections.put(value, element);
     }
-
     
+        
 
-    
+       
 
 }
